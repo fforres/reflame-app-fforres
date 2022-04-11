@@ -1,16 +1,26 @@
-import { Button } from './components/button.js'
+import { NavBar } from './components/navBar/index.js'
 import { styled } from './theme/index.js'
-// import { styled } from "@stitches/react"
+import { App } from "./pages/app.js"
+import {
+    BrowserRouter,
+    Routes,
+    Route,
+} from "react-router-dom";
+
 
 const Button2 = styled("button", {
     color: "blue"
 })
 
 export const Root = () => {
-    // globalStyles()
-    return <div>
-        Hellos {" "}
-        <Button text={"qqqads"} />
-        <Button2>qqqadssss</Button2>
-    </div>
-}
+    return (
+        <main>
+            <NavBar />
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<App />} />
+                </Routes>
+            </BrowserRouter>
+        </main>
+    )
+} 

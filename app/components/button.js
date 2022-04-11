@@ -2,13 +2,13 @@ import { styled } from '../theme/index.js'
 
 const StyledButton = styled("button", {
   color: "green",
-  // backgroundColor: "teal",
-  // padding: "2rem"
+  padding: '1rem',
+  border: 'solid',
+  borderColor: "black",
+  borderWidth: 1,
+  borderRadius: 4
 })
 
-// const Button = styled("button", {
-//     color: "red"
-// })
 export const Button = ({ text }) => {
   return <StyledButton>{text}</StyledButton>
 }

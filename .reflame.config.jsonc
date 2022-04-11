@@ -10,6 +10,22 @@
   "title": "jsdjkfsdjlsfdjkl",
   // NPM packages listed here will be installed by Reflame every time you update this file.
   "npmPackages": {
+    "react-router-dom": {
+      "name": "react-router-dom",
+      "version": "6.3.0"
+    },
+    "@radix-ui/react-progress": {
+      "name": "@radix-ui/react-progress",
+      "version": "0.1.4"
+    },
+    "@radix-ui/colors": {
+      "name": "@radix-ui/colors",
+      "version": "0.1.8"
+    },
+    "@radix-ui/react-navigation-menu": {
+      "name": "@radix-ui/react-navigation-menu",
+      "version": "0.1.2"
+    },
     "@stitches/react": {
       "name": "@stitches/react",
       "version": "1.2.7"
