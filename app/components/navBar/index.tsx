@@ -1,5 +1,9 @@
 import React from "react";
-import { useMatch, useResolvedPath } from "react-router-dom";
+import {
+  useMatch,
+  useResolvedPath,
+  Link as RouterLink,
+} from "react-router-dom";
 import * as NavigationMenuPrimitive from "@radix-ui/react-navigation-menu";
 import { styled } from "../../theme/index.js";
 import { violet, mauve, indigo, purple, blackA } from "@radix-ui/colors";
@@ -65,8 +69,8 @@ const CustomLink = ({
   const isActive = React.useMemo(() => Boolean(match), []);
   return (
     <NavigationMenuPrimitive.Item>
-      <StyledTrigger active={isActive} href={to}>
-        {children}
+      <StyledTrigger active={isActive} asChild>
+        <RouterLink to={to}>{children}</RouterLink>
       </StyledTrigger>
     </NavigationMenuPrimitive.Item>
   );
