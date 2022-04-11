@@ -1,3 +1,16 @@
 import { Button } from './components/button.js'
-// JSX is supported out of the box, no need to import anything.
-export const Root = () => <div>Hello <Button text="dasd" /></div>
+import { styled } from './theme/index.js'
+// import { styled } from "@stitches/react"
+
+const Button2 = styled("button", {
+    color: "blue"
+})
+
+export const Root = () => {
+    // globalStyles()
+    return <div>
+        Hellos {" "}
+        <Button text={"qqqads"} />
+        <Button2>qqqadssss</Button2>
+    </div>
+}

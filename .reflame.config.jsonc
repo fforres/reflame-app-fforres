@@ -10,6 +10,10 @@
   "title": "jsdjkfsdjlsfdjkl",
   // NPM packages listed here will be installed by Reflame every time you update this file.
   "npmPackages": {
+    "@stitches/react": {
+      "name": "@stitches/react",
+      "version": "1.2.7"
+    }
     // // This key is the import identifier. You can use anything, but we recommend sticking
     // // with the name of the package unless you have a reason not to.
     // "framer-motion": {
@@ -20,5 +24,5 @@
     //   // To use a submodule from within a package, add a subpath:
     //   // "subpath": "./some-path"
     // },
-  },
+  }
 }
