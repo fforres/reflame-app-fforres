@@ -6,11 +6,12 @@
   "author": "Felipe Torres <ftorres@brex.com>",
   "license": "MIT",
   "devDependencies": {
+    "@radix-ui/colors": "^0.1.8",
     "@radix-ui/react-navigation-menu": "^0.1.2",
     "@stitches/react": "^1.2.7",
     "@types/react": "^18.0.1",
     "@types/react-dom": "^18.0.0",
-    "@types/react-router-dom": "^5.3.3",
+    "react-router-dom": "^6.3.0",
     "typescript": "^4.6.3"
   }
 }

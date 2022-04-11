@@ -53,3 +53,9 @@ samp {
   direction: ltr /* rtl:ignore */;
   unicode-bidi: bidi-override;
 }
+
+#root {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}

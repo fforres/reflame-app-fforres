@@ -1,21 +1,20 @@
-import { NavBar } from "./components/navBar/index.js";
-import { styled } from "./theme/index.js";
-import { App } from "./pages/app.js";
+import { Skeleton } from "./components/skeleton/index.js";
+import { Talks } from "./pages/talks.js";
+import { Projects } from "./pages/projects.js";
+import { Home } from "./pages/home.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-const Button2 = styled("button", {
-  color: "blue",
-});
 
 export const Root = () => {
   return (
-    <main>
-      <NavBar />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<App />} />
-        </Routes>
-      </BrowserRouter>
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Skeleton />}>
+          <Route index element={<Home />} />
+          <Route path="home" element={<Home />} />
+          <Route path="talks" element={<Talks />} />
+          <Route path="projects" element={<Projects />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
