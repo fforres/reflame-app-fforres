@@ -13,5 +13,8 @@
     "@types/react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",
     "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "framer-motion": "^6.2.9"
   }
 }
