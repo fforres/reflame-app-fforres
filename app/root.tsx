@@ -10,7 +10,6 @@ export const Root = () => {
       <Routes>
         <Route path="/" element={<Skeleton />}>
           <Route index element={<Home />} />
-          <Route path="home" element={<Home />} />
           <Route path="talks" element={<Talks />} />
           <Route path="projects" element={<Projects />} />
         </Route>

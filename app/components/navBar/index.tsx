@@ -75,11 +75,6 @@ const StyledMenuItemBackground = styled(motion.div, {
   "&:hover": {
     backgroundColor: violet.violet4,
   },
-  // fontSize: 15,
-  // lineHeight: 1,
-  // transitionDuration: "150ms",
-  // transitionProperty: "background-color",
-  // transitionTimingFunction: "ease-in",
 });
 
 const CustomLink = ({
@@ -89,8 +84,8 @@ const CustomLink = ({
   to: string;
   children: React.ReactNode;
 }) => {
-  let resolved = useResolvedPath(to);
-  let match = useMatch({ path: resolved.pathname, end: true });
+  const resolved = useResolvedPath(to);
+  const match = useMatch({ path: resolved.pathname, end: true });
 
   const isActive = React.useMemo(() => Boolean(match), []);
   return (
@@ -107,10 +102,8 @@ export const NavBar = React.memo(() => {
   return (
     <StyledRoot>
       <StyledList>
-        <CustomLink to={"/home"}>Home</CustomLink>
-
+        <CustomLink to={"/"}>Home</CustomLink>
         <CustomLink to={"/talks"}>Talks</CustomLink>
-
         <CustomLink to={"/projects"}>Projects</CustomLink>
         <NavigationMenuPrimitive.Indicator />
       </StyledList>
