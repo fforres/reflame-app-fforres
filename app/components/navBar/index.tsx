@@ -19,6 +19,7 @@ const StyledRoot = styled(NavigationMenuPrimitive.Root, {
   justifySelf: "center",
   alignSelf: "center",
   paddingTop: "1rem",
+  zIndex: 100,
 });
 
 const StyledList = styled(NavigationMenuPrimitive.List, {
